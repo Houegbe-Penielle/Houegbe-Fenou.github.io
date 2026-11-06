@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfolio de HOUEGBE Fènou Pénielle Gneethe, future ingénieure en génie logiciel.">
+
+    <meta name="author" content="HOUEGBE Fènou Pénielle Gneethe">
+
+    <title>HOUEGBE Fènou Pénielle Gneethe | Future ingénieure logiciel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-symbol">狼</div>
+            <h2>THE BLACK WOLF</h2>
+            <p>INITIALIZING SYSTEM...</p>
+            <div class="loader-bar">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BACKGROUND -->
+
+    <canvas id="particles"></canvas>
+
+    <div class="moon"></div>
+
+    <div class="background-glow"></div>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">狼</span>
+                <span>FÈNOU<span class="purple">.</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#home">Accueil</a></li>
+
+                <li><a href="#about">À propos</a></li>
+
+                <li><a href="#skills">Compétences</a></li>
+
+                <li><a href="#projects">Projets</a></li>
+
+                <li><a href="#journey">Parcours</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-right">
+
+                <span class="availability">
+                    <span class="status-dot"></span>
+                    OPEN TO OPPORTUNITIES
+                </span>
+
+                <button class="menu-toggle" id="menuToggle">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span></span>
+                    DIGITAL IDENTITY / 2026
+                </div>
+
+                <p class="hero-intro">
+                    HELLO WORLD, I'M
+                </p>
+
+                <h1 class="hero-name">
+                    HOUEGBE<br>
+                    <span class="gradient-text">Fènou Pénielle<br>Gneethe</span>
+                </h1>
+
+                <h2 class="hero-profession">
+
+                    <span id="typing"></span>
+
+                    <span class="cursor">|</span>
+
+                </h2>
+
+                <p class="career-goal">FUTURE INGÉNIEURE EN GÉNIE LOGICIEL</p>
+
+                <p class="hero-description">
+
+                    Étudiante en première année du cycle préparatoire
+                    en informatique à HESTIM School Casablanca.
+
+                    Passionnée par la technologie, la programmation
+                    et la création de solutions numériques.
+
+                    Mon objectif est de devenir ingénieure en génie logiciel
+                    et de concevoir des solutions utiles, une ligne de code à la fois.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn-primary">
+                        EXPLORER MES PROJETS →
+                    </a>
+
+                    <a href="#contact" class="btn-secondary">
+                        ME CONTACTER
+                    </a>
+
+                </div>
+
+
+                <div class="hero-socials">
+
+                    <a href="https://www.linkedin.com/in/f%C3%A8nou-p%C3%A9nielle-gneethe-houegbe-660849440/"
+                        target="_blank" rel="noopener noreferrer">
+                        LINKEDIN ↗
+                    </a>
+
+                    <span></span>
+
+                    <a href="#contact">
+                        CONTACT
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="profile-frame">
+
+                    <div class="profile-glow"></div>
+
+                    <img src="assets/illustration-loup.png"
+                        alt="Illustration animée d'un loup sous la lune dans un ciel violet"
+                        class="profile-image"
+                        onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex';">
+
+                    <div class="wolf-head-layer" aria-hidden="true">
+                        <img src="assets/illustration-loup.png" alt="">
+                    </div>
+
+                    <div class="photo-fallback" id="photoFallback">
+                        <span>狼</span>
+                        <p>BLACK WOLF<br>IDENTITY</p>
+                    </div>
+
+                </div>
+
+                <div class="wolf-symbol">
+                    狼
+                </div>
+
+                <div class="floating-card card-top">
+                    <span>01</span>
+                    CREATIVE MIND
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <span>02</span>
+                    FUTURE ENGINEER
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL TO DISCOVER
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="section about-section" id="about">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">01 / ABOUT ME</span>
+
+                <h2>
+                    BEHIND THE <span class="gradient-text">CODE.</span>
+                </h2>
+
+                <p>
+                    Découvrir l'esprit derrière chaque ligne de code.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <span class="mini-label">WHO AM I?</span>
+
+                    <h3>
+                        Une esprit libre.<br>
+                        Une ambition sans limites.
+                    </h3>
+
+                    <p>
+                        Je suis HOUEGBE Fènou Pénielle Gneethe,
+                        étudiante en première année du cycle préparatoire
+                        en informatique à HESTIM School Casablanca.
+                    </p>
+
+                    <p>
+                        Calme, curieuse et indépendante, j'aime comprendre
+                        comment les choses fonctionnent, résoudre des
+                        problèmes et explorer de nouveaux horizons.
+                    </p>
+
+                    <p>
+                        Mon intérêt pour l'informatique va au-delà de
+                        l'apprentissage du code : je veux comprendre
+                        les systèmes, développer des applications et
+                        participer à la création des technologies de demain.
+                    </p>
+
+                    <p>
+                        Je suis également passionnée par les univers
+                        créatifs, les mangas, le dessin, la musique,
+                        les arts martiaux et l'apprentissage.
+                    </p>
+
+                    <div class="quote-box">
+
+                        <span>“</span>
+
+                        <p>
+                            I don't follow the path.
+                            I build my own.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-stats reveal">
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">⌘</span>
+
+                        <h3>01</h3>
+
+                        <p>YEAR OF COMPUTER SCIENCE</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">✧</span>
+
+                        <h3>∞</h3>
+
+                        <p>THINGS TO LEARN</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">狼</span>
+
+                        <h3>100%</h3>
+
+                        <p>DETERMINATION</p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">◈</span>
+
+                        <h3>2026</h3>
+
+                        <p>THE BEGINNING</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">02 / MY SKILLS</span>
+
+                <h2>
+                    MY DIGITAL <span class="gradient-text">ARSENAL.</span>
+                </h2>
+
+                <p>
+                    Les outils que j'apprends à maîtriser.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">🌐</div>
+
+                    <h3>HTML5</h3>
+
+                    <p>
+                        Structure et organisation des pages web.
+                    </p>
+
+                    <span class="skill-status">LEARNING / PRACTICE</span>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">🎨</div>
+
+                    <h3>CSS3</h3>
+
+                    <p>
+                        Design, animations et interfaces responsives.
+                    </p>
+
+                    <span class="skill-status">LEARNING / PRACTICE</span>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">⚡</div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Interactivité et programmation web.
+                    </p>
+
+                    <span class="skill-status">LEARNING / PRACTICE</span>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">🐍</div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Logique, algorithmique et programmation.
+                    </p>
+
+                    <span class="skill-status">LEARNING / PRACTICE</span>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">⌨</div>
+
+                    <h3>Programming Logic</h3>
+
+                    <p>
+                        Algorithmes, raisonnement et résolution de problèmes.
+                    </p>
+
+                    <span class="skill-status">IN PROGRESS</span>
+
+                </div>
+
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-icon">◈</div>
+
+                    <h3>Creative Design</h3>
+
+                    <p>
+                        Créativité, identité visuelle et conception.
+                    </p>
+
+                    <span class="skill-status">IN PROGRESS</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">03 / MY PROJECTS</span>
+
+                <h2>
+                    BUILT WITH <span class="gradient-text">PASSION.</span>
+                </h2>
+
+                <p>
+                    Chaque projet est une nouvelle expérience.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-visual project-one">
+
+                        <span>01</span>
+
+                        <div class="project-art">⌘</div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            WEB DEVELOPMENT
+                        </span>
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            Création d'un portfolio personnel interactif
+                            avec HTML, CSS et JavaScript.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <span class="project-status">
+                            CURRENT PROJECT
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-visual project-two">
+
+                        <span>02</span>
+
+                        <div class="project-art">⚙</div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            PROGRAMMING
+                        </span>
+
+                        <h3>Future Project</h3>
+
+                        <p>
+                            Un espace réservé à mes futurs projets
+                            de programmation et d'algorithmique.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>Algorithms</span>
+
+                        </div>
+
+                        <span class="project-status">
+                            COMING SOON
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card reveal">
+
+                    <div class="project-visual project-three">
+
+                        <span>03</span>
+
+                        <div class="project-art">◈</div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <span class="project-category">
+                            SOFTWARE ENGINEERING
+                        </span>
+
+                        <h3>Future Innovation</h3>
+
+                        <p>
+                            De nouvelles idées, de nouvelles expériences
+                            et des solutions numériques à construire.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Development</span>
+                            <span>Innovation</span>
+
+                        </div>
+
+                        <span class="project-status">
+                            IN DEVELOPMENT
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOURNEY -->
+
+        <section class="section journey-section" id="journey">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">04 / MY JOURNEY</span>
+
+                <h2>
+                    THE ROAD TO <span class="gradient-text">GREATNESS.</span>
+                </h2>
+
+                <p>
+                    Chaque étape construit la personne que je deviens.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <span class="timeline-date">2026</span>
+
+                    <div class="timeline-content">
+
+                        <h3>HESTIM SCHOOL CASABLANCA</h3>
+
+                        <p>
+                            Début de mon parcours dans le cycle préparatoire
+                            en informatique.
+                        </p>
+
+                        <span>FIRST YEAR / COMPUTER SCIENCE</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <span class="timeline-date">2026 - PRESENT</span>
+
+                    <div class="timeline-content">
+
+                        <h3>TECHNICAL EXPLORATION</h3>
+
+                        <p>
+                            Apprentissage de la programmation,
+                            de l'algorithmique et du développement web.
+                        </p>
+
+                        <span>LEARNING & BUILDING</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <span class="timeline-date">THE FUTURE</span>
+
+                    <div class="timeline-content">
+
+                        <h3>SOFTWARE ENGINEERING</h3>
+
+                        <p>
+                            Développer mes compétences et construire
+                            mon parcours dans l'ingénierie informatique
+                            et le génie logiciel.
+                        </p>
+
+                        <span>MISSION IN PROGRESS</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERSONALITY -->
+
+        <section class="wolf-section">
+
+            <div class="wolf-content reveal">
+
+                <span class="section-number">
+                    05 / MY IDENTITY
+                </span>
+
+                <div class="wolf-emoji">🐺</div>
+
+                <h2>
+                    THE BLACK WOLF
+                </h2>
+
+                <p class="wolf-subtitle">
+                    A MIND THAT NEVER STOPS.
+                </p>
+
+                <p class="wolf-description">
+
+                    Un esprit libre, une âme profonde,
+                    une puissance silencieuse.
+
+                    Je préfère avancer dans l'ombre,
+                    apprendre, évoluer et laisser mes réalisations parler.
+
+                </p>
+
+                <div class="wolf-traits">
+
+                    <span>INTELLIGENCE</span>
+                    <span>INDEPENDENCE</span>
+                    <span>CURIOSITY</span>
+                    <span>PERSEVERANCE</span>
+                    <span>AMBITION</span>
+
+                </div>
+
+                <h3>
+                    "WALK ALONE. THINK DIFFERENT. BUILD YOUR LEGACY."
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">06 / CONTACT</span>
+
+                <h2>
+                    LET'S BUILD <span class="gradient-text">SOMETHING.</span>
+                </h2>
+
+                <p>
+                    Une idée, une collaboration ou simplement envie d'échanger ?
+                </p>
+
+            </div>
+
+
+            <div class="contact-container reveal">
+
+                <div class="contact-message">
+
+                    <h3>
+                        THE NEXT<br>
+                        CHAPTER STARTS HERE.
+                    </h3>
+
+                    <p>
+                        Je suis ouverte aux échanges,
+                        aux opportunités d'apprentissage
+                        et aux collaborations autour de la technologie.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a href="mailto:penielleainsley@gmail.com">
+
+                        <span>✉</span>
+
+                        <div>
+                            <small>EMAIL</small>
+                            <p>penielleainsley@gmail.com</p>
+                        </div>
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/f%C3%A9nou-p%C3%A9nielle-gneethe-houegbe-660849440/"
+                        target="_blank" rel="noopener noreferrer">
+
+                        <span>in</span>
+
+                        <div>
+                            <small>LINKEDIN</small>
+                            <p>Connect with me</p>
+                        </div>
+
+                        <span>↗</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            狼 FÈNOU<span>.</span>
+        </div>
+
+        <p>
+            Designed & Developed by HOUEGBE Fènou Pénielle Gneethe.
+        </p>
+
+        <p>
+            © <span id="year"></span> — ALL RIGHTS RESERVED.
+        </p>
+
+        <a href="#home" class="back-top">
+            BACK TO TOP ↑
+        </a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
